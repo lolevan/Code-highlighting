@@ -5,6 +5,7 @@ from rest_framework.routers import DefaultRouter
 from .views import *
 
 
+# url registration
 router = DefaultRouter()
 router.register(r'snippets', SnippetViewSet, basename='snippets')
 router.register(r'users', UserViewSet, basename='user')
@@ -45,4 +46,3 @@ urlpatterns = [
 
 # Ссылка на определенный формат (управление форматами)
 # urlpatterns = format_suffix_patterns(urlpatterns)
-
